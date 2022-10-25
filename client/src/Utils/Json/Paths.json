@@ -8,8 +8,8 @@
 			"link": "/General/Egresados",
 			"texto": "Egresados"
 		},
-		"TecnicosCertificados": {
-			"link": "/General/TecnicosCertificados",
+		"tecnicosCertificados": {
+			"link": "/General/tecnicosCertificados",
 			"texto": "Técnicos Certificados"
 		},
 		"testimonios": {
@@ -26,8 +26,8 @@
 			"link": "/Cursos/prox_inicios",
 			"texto": "Próximos inicios"
 		},
-		"split-automotriz": {
-			"link": "/Cursos/split-automotriz",
+		"split_automotriz": {
+			"link": "/Cursos/split_automotriz",
 			"texto": "Aire acondicionado split y automotriz"
 		},
 		"split": {

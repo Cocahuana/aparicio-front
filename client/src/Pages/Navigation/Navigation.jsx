@@ -6,7 +6,7 @@ import NavDropdown from "react-bootstrap/NavDropdown";
 import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
-
+import path from "../../Utils/Json/Paths.json";
 // const NavItem = styled.li.attrs(() => ({
 // 	className: "nav-item",
 // }))`
@@ -22,6 +22,13 @@ import Navbar from "react-bootstrap/Navbar";
 // }))``;
 
 function Navigation() {
+	const {
+		cursosOnline,
+		egresados,
+		tecnicosCertificados,
+		testimonios,
+		contacto,
+	} = path.General;
 	return (
 		<>
 			<Navbar bg='light' expand='lg'>
@@ -36,22 +43,22 @@ function Navigation() {
 								Inicio
 							</Nav.Link>
 							<CursosDropdown />
-							<Nav.Link as={Link} to='/Cursos/Online'>
-								Cursos Online
+							<Nav.Link as={Link} to={cursosOnline.link}>
+								{cursosOnline.texto}
 							</Nav.Link>
-							<Nav.Link as={Link} to='/Egresados'>
-								Egresados
+							<Nav.Link as={Link} to={egresados.link}>
+								{egresados.texto}
 							</Nav.Link>
-							<Nav.Link as={Link} to='/TecnicosCertificados'>
-								Técnicos Certificados
+							<Nav.Link as={Link} to={tecnicosCertificados.link}>
+								{tecnicosCertificados.texto}
 							</Nav.Link>
-							<Nav.Link as={Link} to='/Testimonios'>
-								Testimonios
+							<Nav.Link as={Link} to={testimonios.link}>
+								{testimonios.texto}
 							</Nav.Link>
 							<ServiciosDropdown />
 							<ProductosDropdown />
-							<Nav.Link as={Link} to='/Contacto'>
-								Contacto
+							<Nav.Link as={Link} to={contacto.link}>
+								{contacto.texto}
 							</Nav.Link>
 						</Nav>
 					</Navbar.Collapse>
@@ -62,29 +69,37 @@ function Navigation() {
 }
 
 const CursosDropdown = () => {
+	const {
+		prox_inicios,
+		split_automotriz,
+		split,
+		automotriz,
+		heladera,
+		lavarropa,
+	} = path.Cursos;
 	const items = [
+		{link: split_automotriz.link, text: split_automotriz.texto},
 		{
-			link: "/Cursos/1",
-			text: "Aire acondicionado split y automotriz",
-		},
-		{link: "/Cursos/2", text: "Aire acondicionado split"},
-		{
-			link: "/Cursos/3",
-			text: "Aire acondicionado automotriz",
+			link: split.link,
+			text: split.texto,
 		},
 		{
-			link: "/Cursos/4",
-			text: "Heladeras familiares y comerciales",
+			link: automotriz.link,
+			text: automotriz.texto,
 		},
 		{
-			link: "/Cursos/5",
-			text: "Lavarropas",
+			link: heladera.link,
+			text: heladera.texto,
+		},
+		{
+			link: lavarropa.link,
+			text: lavarropa.texto,
 		},
 	];
 	return (
 		<NavDropdown title='Cursos' id='cursos-dropdown'>
-			<NavDropdown.Item as={Link} to='/Cursos/Proximos_Inicios'>
-				Próximos inicios
+			<NavDropdown.Item as={Link} to={prox_inicios.link}>
+				{prox_inicios.texto}
 			</NavDropdown.Item>
 			<NavDropdown.Divider />
 			{items.map((curso) => (
@@ -97,19 +112,21 @@ const CursosDropdown = () => {
 };
 
 const ServiciosDropdown = () => {
+	const {instalacion, carga_refrigerante, reparacion, mantenimiento} =
+		path.Servicios;
 	const items = [
 		{
-			link: "/Cursos/6",
-			text: "Instalación de equipos A/AC",
+			link: instalacion.link,
+			text: instalacion.texto,
 		},
-		{link: "/Cursos/2", text: "Carga de gas refrigerante"},
+		{link: carga_refrigerante.link, text: carga_refrigerante.texto},
 		{
-			link: "/Cursos/7",
-			text: "Reparación de equipos y fugas",
+			link: reparacion.link,
+			text: reparacion.texto,
 		},
 		{
-			link: "/Cursos/8",
-			text: "Mantenimiento",
+			link: mantenimiento.link,
+			text: mantenimiento.texto,
 		},
 	];
 	return (
@@ -124,18 +141,19 @@ const ServiciosDropdown = () => {
 };
 
 const ProductosDropdown = () => {
+	const {equipos, herramientas, insumos} = path.Productos;
 	const items = [
 		{
-			link: "/Cursos/9",
-			text: "Equipos",
+			link: equipos.link,
+			text: equipos.texto,
 		},
 		{
-			link: "/Cursos/10",
-			text: "Herramientas",
+			link: herramientas.link,
+			text: herramientas.texto,
 		},
 		{
-			link: "/Cursos/11",
-			text: "Insumos",
+			link: insumos.link,
+			text: insumos.texto,
 		},
 	];
 	return (

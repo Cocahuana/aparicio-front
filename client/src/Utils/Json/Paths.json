@@ -1,0 +1,82 @@
+{
+	"General": {
+		"cursosOnline": {
+			"link": "/General/CursosOnline",
+			"texto": "Cursos Online"
+		},
+		"egresados": {
+			"link": "/General/Egresados",
+			"texto": "Egresados"
+		},
+		"TecnicosCertificados": {
+			"link": "/General/TecnicosCertificados",
+			"texto": "Técnicos Certificados"
+		},
+		"testimonios": {
+			"link": "/General/testimonios",
+			"texto": "Testimonios"
+		},
+		"contacto": {
+			"link": "/General/contacto",
+			"texto": "Contacto"
+		}
+	},
+	"Cursos": {
+		"prox_inicios": {
+			"link": "/Cursos/prox_inicios",
+			"texto": "Próximos inicios"
+		},
+		"split-automotriz": {
+			"link": "/Cursos/split-automotriz",
+			"texto": "Aire acondicionado split y automotriz"
+		},
+		"split": {
+			"link": "/Cursos/split",
+			"texto": "Aire acondicionado split"
+		},
+		"automotriz": {
+			"link": "/Cursos/automotriz",
+			"texto": "Aire acondicionado automotriz"
+		},
+		"heladera": {
+			"link": "/Cursos/heladera",
+			"texto": "Heladeras familiares y comerciales"
+		},
+		"lavarropa": {
+			"link": "/Cursos/automotriz",
+			"texto": "Lavarropas"
+		}
+	},
+	"Servicios": {
+		"instalacion": {
+			"link": "/Servicios/instalacion",
+			"texto": "Instalación de equipos A/AC"
+		},
+		"carga_refrigerante": {
+			"link": "/Servicios/carga_refrigerante",
+			"texto": "Carga de gas refrigerante"
+		},
+		"reparacion": {
+			"link": "/Servicios/reparacion",
+			"texto": "Reparación de equipos y fugas"
+		},
+		"mantenimiento": {
+			"link": "/Servicios/mantenimiento",
+			"texto": "Mantenimiento"
+		}
+	},
+	"Productos": {
+		"equipos": {
+			"link": "/Productos/equipos",
+			"texto": "Equipos"
+		},
+		"herramientas": {
+			"link": "/Productos/herramientas",
+			"texto": "Herramientas"
+		},
+		"insumos": {
+			"link": "/Productos/insumos",
+			"texto": "Insumos"
+		}
+	}
+}

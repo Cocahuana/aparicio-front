@@ -149,19 +149,4 @@ const ProductosDropdown = () => {
 	);
 };
 
-const MobileNavbar = () => {
-	return (
-		<>
-			<LogoAparicio />
-			<button
-				className='navbar-toggler'
-				type='button'
-				data-bs-toggle='collapse'
-				data-bs-target='#collapsibleNavbar'>
-				<span className='navbar-toggler-icon'></span>
-			</button>
-		</>
-	);
-};
-
 export default Navigation;

@@ -1,6 +1,6 @@
 import React from "react";
 import {Link} from "react-router-dom";
-import styled from "styled-components";
+// import styled from "styled-components";
 import LogoAparicio from "../../components/LogoAparicio/LogoAparicio";
 import NavDropdown from "react-bootstrap/NavDropdown";
 import Container from "react-bootstrap/Container";

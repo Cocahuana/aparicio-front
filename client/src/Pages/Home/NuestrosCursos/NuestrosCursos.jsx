@@ -1,13 +1,9 @@
-import {Card} from "react-bootstrap";
-import {Button} from "react-bootstrap";
-import styled from "styled-components";
+import {Card, Col, Button} from "react-bootstrap";
 import automotrizImg from "./automotriz.png";
 import heladeraImg from "./heladera.png";
 import splitImg from "./split.jpeg";
 import lavarropaImg from "./lavarropa.png";
 import CenteredSectionTitle from "../../../components/CenteredSectionTitle/CenteredSectionTitle";
-import FeatureDivider from "../../../components/FeatureDivider/FeatureDivider";
-import {Col} from "react-bootstrap";
 function NuestrosCursos() {
 	const cursos = [
 		{

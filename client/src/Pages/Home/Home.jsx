@@ -10,7 +10,6 @@ function Home() {
 			<CarouselComponent />
 			<div className='container marketing'>
 				<NuestrosCursos />
-
 				<TestimoniosSection />
 				<NuestrosServiciosSection />
 			</div>

@@ -1,13 +1,7 @@
-import React from "react";
-import instagramLogo from "./instagram.png";
-import facebookLogo from "./facebook.png";
-import whatsappLogo from "./whatsapp.png";
-import youtubeLogo from "./youtube.png";
+import FacebookIcon from "../../components/Icons/FacebookIcon/FacebookIcon";
+import WhatsappIcon from "../../components/Icons/WhatsappIcon/WhatsappIcon";
+import InstagramIcon from "../../components/Icons/InstagramIcon/InstagramIcon";
 function Footer() {
-	const instagramAparicio = "https://www.instagram.com/apafriototal/";
-	const whatsappAparicio = "https://wa.me/5492235256164";
-	const facebookAparicio =
-		"https://www.facebook.com/apafriototal/about_contact_and_basic_info";
 	return (
 		<div className='container'>
 			<footer className='d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top'>
@@ -24,29 +18,13 @@ function Footer() {
 
 				<ul className='nav col-md-4 justify-content-end list-unstyled d-flex'>
 					<li className='ms-3'>
-						<a href={whatsappAparicio}>
-							<img
-								src={whatsappLogo}
-								style={{width: "30px", height: "30px"}}
-							/>
-						</a>
+						<WhatsappIcon />
 					</li>
 					<li className='ms-3'>
-						<a href={facebookAparicio}>
-							<img
-								src={facebookLogo}
-								style={{width: "30px", height: "30px"}}
-							/>
-						</a>
+						<FacebookIcon />
 					</li>
 					<li className='ms-3'>
-						<a href={instagramAparicio} alt='logo-instagram'>
-							<img
-								src={instagramLogo}
-								style={{width: "30px", height: "30px"}}
-								alt='instagram-icon'
-							/>
-						</a>
+						<InstagramIcon />
 					</li>
 				</ul>
 			</footer>

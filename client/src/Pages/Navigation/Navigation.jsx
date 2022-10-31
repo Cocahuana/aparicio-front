@@ -7,6 +7,7 @@ import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import path from "../../Utils/Json/Paths.json";
+import styled from "styled-components";
 // const NavItem = styled.li.attrs(() => ({
 // 	className: "nav-item",
 // }))`
@@ -21,6 +22,9 @@ import path from "../../Utils/Json/Paths.json";
 // 	className: "nav-link",
 // }))``;
 
+const BottomSpacing = styled.div`
+	margin: 0 0 10vh 0;
+`;
 function Navigation() {
 	const {
 		cursosOnline,
@@ -31,39 +35,43 @@ function Navigation() {
 	} = path.General;
 	return (
 		<>
-			<Navbar bg='light' expand='lg' fixed='top'>
-				<Container>
-					<Navbar.Brand>
-						<LogoAparicio />
-					</Navbar.Brand>
-					<Navbar.Toggle aria-controls='basic-navbar-nav' />
-					<Navbar.Collapse id='basic-navbar-nav'>
-						<Nav className='me-auto'>
-							<Nav.Link as={Link} to='/'>
-								Inicio
-							</Nav.Link>
-							<CursosDropdown />
-							<Nav.Link as={Link} to={cursosOnline.link}>
-								{cursosOnline.texto}
-							</Nav.Link>
-							<Nav.Link as={Link} to={egresados.link}>
-								{egresados.texto}
-							</Nav.Link>
-							<Nav.Link as={Link} to={tecnicosCertificados.link}>
-								{tecnicosCertificados.texto}
-							</Nav.Link>
-							<Nav.Link as={Link} to={testimonios.link}>
-								{testimonios.texto}
-							</Nav.Link>
-							<ServiciosDropdown />
-							<ProductosDropdown />
-							<Nav.Link as={Link} to={contacto.link}>
-								{contacto.texto}
-							</Nav.Link>
-						</Nav>
-					</Navbar.Collapse>
-				</Container>
-			</Navbar>
+			<BottomSpacing>
+				<Navbar bg='light' expand='lg' fixed='top'>
+					<Container>
+						<Navbar.Brand>
+							<LogoAparicio />
+						</Navbar.Brand>
+						<Navbar.Toggle aria-controls='basic-navbar-nav' />
+						<Navbar.Collapse id='basic-navbar-nav'>
+							<Nav className='me-auto'>
+								<Nav.Link as={Link} to='/'>
+									Inicio
+								</Nav.Link>
+								<CursosDropdown />
+								<Nav.Link as={Link} to={cursosOnline.link}>
+									{cursosOnline.texto}
+								</Nav.Link>
+								<Nav.Link as={Link} to={egresados.link}>
+									{egresados.texto}
+								</Nav.Link>
+								<Nav.Link
+									as={Link}
+									to={tecnicosCertificados.link}>
+									{tecnicosCertificados.texto}
+								</Nav.Link>
+								<Nav.Link as={Link} to={testimonios.link}>
+									{testimonios.texto}
+								</Nav.Link>
+								<ServiciosDropdown />
+								<ProductosDropdown />
+								<Nav.Link as={Link} to={contacto.link}>
+									{contacto.texto}
+								</Nav.Link>
+							</Nav>
+						</Navbar.Collapse>
+					</Container>
+				</Navbar>
+			</BottomSpacing>
 		</>
 	);
 }

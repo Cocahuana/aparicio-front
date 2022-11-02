@@ -9,6 +9,7 @@ import Paths from "./Utils/Json/Paths.json"
 import CursosOnline from './Pages/CursosOnline/CursosOnline';
 import Egresados from './Pages/Egresados/Egresados';
 import TecnicosCertificados from './Pages/TecnicosCertificados/TecnicosCertificados';
+import ProxInicios from './Pages/Cursos/ProxInicios/ProxInicios';
 function App () {
   const {
     cursosOnline,
@@ -17,6 +18,14 @@ function App () {
     testimonios,
     contacto,
   } = Paths.General;
+  const {
+    prox_inicios,
+    split_automotriz,
+    split,
+    automotriz,
+    heladera,
+    lavarropa,
+  } = Paths.Cursos;
 
   return (
     <>
@@ -28,6 +37,8 @@ function App () {
         <Route path={ cursosOnline.link } element={ <CursosOnline /> } />
         <Route path={ egresados.link } element={ <Egresados /> } />
         <Route path={ tecnicosCertificados.link } element={ <TecnicosCertificados /> } />
+        <Route path={ prox_inicios.link } element={ <ProxInicios /> } />
+
       </Routes>
       <Footer />
     </>

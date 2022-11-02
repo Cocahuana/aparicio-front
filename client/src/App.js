@@ -6,6 +6,7 @@ import Footer from './Pages/Footer/Footer';
 import Testimonios from "./Pages/Testimonios/Testimonios"
 import Contacto from "./Pages/Contacto/Contacto"
 import Paths from "./Utils/Json/Paths.json"
+import CursosOnline from './Pages/CursosOnline/CursosOnline';
 function App () {
   const {
     cursosOnline,
@@ -22,6 +23,7 @@ function App () {
         <Route path="/" element={ <Home /> } />
         <Route path={ testimonios.link } element={ <Testimonios /> } />
         <Route path={ contacto.link } element={ <Contacto /> } />
+        <Route path={ cursosOnline.link } element={ <CursosOnline /> } />
       </Routes>
       <Footer />
     </>

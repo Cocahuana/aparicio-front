@@ -10,6 +10,7 @@ import CursosOnline from './Pages/CursosOnline/CursosOnline';
 import Egresados from './Pages/Egresados/Egresados';
 import TecnicosCertificados from './Pages/TecnicosCertificados/TecnicosCertificados';
 import ProxInicios from './Pages/Cursos/ProxInicios/ProxInicios';
+import SplitAutomotriz from './Pages/Cursos/SplitAutomotriz/SplitAutomotriz';
 function App () {
   const {
     cursosOnline,
@@ -38,7 +39,7 @@ function App () {
         <Route path={ egresados.link } element={ <Egresados /> } />
         <Route path={ tecnicosCertificados.link } element={ <TecnicosCertificados /> } />
         <Route path={ prox_inicios.link } element={ <ProxInicios /> } />
-
+        <Route path={ split_automotriz.link } element={ <SplitAutomotriz /> } />
       </Routes>
       <Footer />
     </>

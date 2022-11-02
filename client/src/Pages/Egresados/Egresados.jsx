@@ -1,6 +1,30 @@
 import React from "react";
-import { Card } from "react-bootstrap";
+import {Card, CardGroup} from "react-bootstrap";
+import egresados_01Img from "./assets/egresados_01.jpeg";
+import egresados_02Img from "./assets/egresados_02.jpeg";
+import egresados_03Img from "./assets/egresados_03.jpeg";
 function Egresados() {
+	const cursos = [
+		{
+			img: egresados_01Img,
+			alt: "Egresados foto 1",
+			title: "CURSO AIRE ACONDICIONADO SPLIT",
+			date: "Octubre 2022",
+		},
+		{
+			img: egresados_02Img,
+			alt: "Egresados foto 2",
+			title: "CURSO AIRE ACONDICIONADO SPLIT",
+			date: "Octubre 2022",
+		},
+		{
+			img: egresados_03Img,
+			alt: "Egresados foto 3",
+			title: "CURSO AIRE ACONDICIONADO AUTOMOTOR",
+			date: "Octubre 2022",
+		},
+	];
+
 	return (
 		<>
 			<div className='container marketing'>
@@ -8,75 +32,25 @@ function Egresados() {
 					EGRESADOS
 				</h1>
 				{/* <!-- color hexadecimal acorde al logo: #ff5f00--> */}
-
-				<div className='card-group'>
-					<div className='card'>
-						<img
-							src='/Img/Egresados/egresados_01.jpeg'
-							className='card-img-top'
-							alt='...'
-						/>
-						<div className='card-body'>
-							<h5 className='card-title'>
-								CURSO AIRE ACONDICIONADO SPLIT
-							</h5>
-							<p className='card-text'>
-								This is a wider card with supporting text below
-								as a natural lead-in to additional content. This
-								content is a little bit longer.
-							</p>
-							<p className='card-text'>
-								<small className='text-muted'>
-									Octubre 2022
-								</small>
-							</p>
-						</div>
-					</div>
-					<div className='card'>
-						<img
-							src='/Img/Egresados/egresados_02.jpeg'
-							className='card-img-top'
-							alt='...'
-						/>
-						<div className='card-body'>
-							<h5 className='card-title'>
-								CURSO AIRE ACONDICIONADO SPLIT
-							</h5>
-							<p className='card-text'>
-								This card has supporting text below as a natural
-								lead-in to additional content.
-							</p>
-							<p className='card-text'>
-								<small className='text-muted'>
-									Octubre 2022
-								</small>
-							</p>
-						</div>
-					</div>
-					<div className='card'>
-						<img
-							src='/Img/Egresados/egresados_03.jpeg'
-							className='card-img-top'
-							alt='...'
-						/>
-						<div className='card-body'>
-							<h5 className='card-title'>
-								CURSO AIRE ACONDICIONADO AUTOMOTOR
-							</h5>
-							<p className='card-text'>
-								This is a wider card with supporting text below
-								as a natural lead-in to additional content. This
-								card has even longer content than the first to
-								show that equal height action.
-							</p>
-							<p className='card-text'>
-								<small className='text-muted'>
-									Octubre 2022
-								</small>
-							</p>
-						</div>
-					</div>
-				</div>
+				<CardGroup>
+					{cursos?.map((curso) => (
+						<Card>
+							<Card.Img
+								variant='top'
+								src={curso.img}
+								alt={curso.alt}
+							/>
+							<Card.Body>
+								<Card.Title>{curso.title}</Card.Title>
+								<Card.Text>
+									<small className='text-muted'>
+										{curso.date}
+									</small>
+								</Card.Text>
+							</Card.Body>
+						</Card>
+					))}
+				</CardGroup>
 
 				{/* 
                     <div style="display: flex; justify-content: center; align-content: center;">

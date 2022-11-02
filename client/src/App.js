@@ -13,6 +13,7 @@ import ProxInicios from './Pages/Cursos/ProxInicios/ProxInicios';
 import SplitAutomotriz from './Pages/Cursos/SplitAutomotriz/SplitAutomotriz';
 import Split from './Pages/Cursos/Split/Split';
 import Automotriz from './Pages/Cursos/Automotriz/Automotriz';
+import Heladeras from './Pages/Cursos/Heladeras/Heladeras';
 function App () {
   const {
     cursosOnline,
@@ -44,6 +45,7 @@ function App () {
         <Route path={ split_automotriz.link } element={ <SplitAutomotriz /> } />
         <Route path={ split.link } element={ <Split /> } />
         <Route path={ automotriz.link } element={ <Automotriz /> } />
+        <Route path={ heladera.link } element={ <Heladeras /> } />
       </Routes>
       <Footer />
     </>

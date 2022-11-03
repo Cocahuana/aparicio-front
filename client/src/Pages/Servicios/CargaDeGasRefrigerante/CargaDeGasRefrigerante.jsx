@@ -6,8 +6,11 @@ import ServiciosCards from "../ServiciosCards";
 import ServiciosHeader from "../ServiciosHeader";
 function CargaDeGasRefrigerante() {
 	const title = "CARGA DE GAS REFRIGERANTE";
-	const text =
-		"Carga de gas refrigerante de equipos de aire acondicionado en viviendas, comercios, talleres, industriales, cámaras frigoríficas. Es fundamental encontrar la pérdida por donde se ha fugado el gas, antes de realizar la carga.";
+	const text = [
+		{
+			text: "Carga de gas refrigerante de equipos de aire acondicionado en viviendas, comercios, talleres, industriales, cámaras frigoríficas. Es fundamental encontrar la pérdida por donde se ha fugado el gas, antes de realizar la carga.",
+		},
+	];
 
 	const equipos = [
 		{
@@ -34,7 +37,7 @@ function CargaDeGasRefrigerante() {
 	];
 	return (
 		<>
-			<ServiciosHeader title={title} text={text} />
+			<ServiciosHeader title={title} content={text} />
 			<ServiciosCards content={equipos} />
 		</>
 	);

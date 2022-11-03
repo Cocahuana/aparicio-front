@@ -1,12 +1,15 @@
-import ServiciosHeader from "../ServiciosHeader";
 import cassetteImg from "./assets/cassette_aire_acondicionado.jpg";
 import vrvImg from "./assets/VRV_aire_acondicionado.jpg";
 import pisoTechoImg from "./assets/pisotecho_aire_acondicionado.jpg";
+import ServiciosHeader from "../ServiciosHeader";
 import ServiciosCards from "../ServiciosCards";
 function InstalacionEquiposAC() {
 	const title = "INSTALACIÓN DE EQUIPOS DE AIRE ACONDICIONADO";
-	const text =
-		"Realizamos instalación de equipos de aire acondicionado de todo tipo: en viviendas, comercios, talleres, industriales, cámaras frigoríficas. Ofrecemos asesoramiento en la compra de equipos de acuerdo al balance térmico del lugar y la ubicación más adecuada para que tenga un mejor rendimiento.";
+	const text = [
+		{
+			text: "Realizamos instalación de equipos de aire acondicionado de todo tipo: en viviendas, comercios, talleres, industriales, cámaras frigoríficas. Ofrecemos asesoramiento en la compra de equipos de acuerdo al balance térmico del lugar y la ubicación más adecuada para que tenga un mejor rendimiento.",
+		},
+	];
 
 	const equipos = [
 		{
@@ -33,7 +36,7 @@ function InstalacionEquiposAC() {
 	];
 	return (
 		<>
-			<ServiciosHeader title={title} text={text} />
+			<ServiciosHeader title={title} content={text} />
 			<ServiciosCards content={equipos} />
 		</>
 	);

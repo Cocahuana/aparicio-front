@@ -17,6 +17,7 @@ import Heladeras from './Pages/Cursos/Heladeras/Heladeras';
 import InstalacionEquiposAC from './Pages/Servicios/InstalacionEquiposAC/InstalacionEquiposAC';
 import CargaDeGasRefrigerante from './Pages/Servicios/CargaDeGasRefrigerante/CargaDeGasRefrigerante';
 import ReparacionEquipos from './Pages/Servicios/ReparacionEquipos/ReparacionEquipos';
+import Mantenimiento from './Pages/Servicios/Mantenimiento/Mantenimiento';
 function App () {
   const {
     cursosOnline,
@@ -59,7 +60,7 @@ function App () {
         <Route path={ instalacion.link } element={ <InstalacionEquiposAC /> } />
         <Route path={ carga_refrigerante.link } element={ <CargaDeGasRefrigerante /> } />
         <Route path={ reparacion.link } element={ <ReparacionEquipos /> } />
-
+        <Route path={ mantenimiento.link } element={ <Mantenimiento /> } />
       </Routes>
       <Footer />
     </>

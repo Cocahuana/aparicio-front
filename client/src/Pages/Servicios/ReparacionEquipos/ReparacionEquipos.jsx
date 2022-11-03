@@ -6,8 +6,11 @@ import ServiciosCards from "../ServiciosCards";
 import ServiciosHeader from "../ServiciosHeader";
 function ReparacionEquipos() {
 	const title = "REPARACIÓN DE EQUIPOS DE AIRE ACONDICIONADO";
-	const text =
-		"Realizamos la reparación de equipos de aire acondicionado familiar, comercial e industrial, automotriz";
+	const text = [
+		{
+			text: "Realizamos la reparación de equipos de aire acondicionado familiar, comercial e industrial, automotriz",
+		},
+	];
 
 	const equipos = [
 		{
@@ -34,7 +37,7 @@ function ReparacionEquipos() {
 	];
 	return (
 		<>
-			<ServiciosHeader title={title} text={text} />
+			<ServiciosHeader title={title} content={text} />
 			<ServiciosCards content={equipos} />
 		</>
 	);

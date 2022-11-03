@@ -15,6 +15,7 @@ import Split from './Pages/Cursos/Split/Split';
 import Automotriz from './Pages/Cursos/Automotriz/Automotriz';
 import Heladeras from './Pages/Cursos/Heladeras/Heladeras';
 import InstalacionEquiposAC from './Pages/Servicios/InstalacionEquiposAC/InstalacionEquiposAC';
+import CargaDeGasRefrigerante from './Pages/Servicios/CargaDeGasRefrigerante/CargaDeGasRefrigerante';
 function App () {
   const {
     cursosOnline,
@@ -34,6 +35,7 @@ function App () {
 
   const {
     instalacion,
+    carga_refrigerante,
   } = Paths.Servicios
 
   return (
@@ -52,6 +54,8 @@ function App () {
         <Route path={ automotriz.link } element={ <Automotriz /> } />
         <Route path={ heladera.link } element={ <Heladeras /> } />
         <Route path={ instalacion.link } element={ <InstalacionEquiposAC /> } />
+        <Route path={ carga_refrigerante.link } element={ <CargaDeGasRefrigerante /> } />
+
       </Routes>
       <Footer />
     </>

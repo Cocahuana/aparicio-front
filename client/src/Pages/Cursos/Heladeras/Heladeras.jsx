@@ -121,7 +121,9 @@ function Heladeras() {
 						<Card>
 							{temarios1.map((tema) => (
 								<Card.Body>
-									<Card.Text>{tema.text}</Card.Text>
+									<Card.Text>
+										{tema.text}
+									</Card.Text>
 								</Card.Body>
 							))}
 						</Card>
@@ -129,7 +131,9 @@ function Heladeras() {
 						<Card>
 							{temarios2.map((tema) => (
 								<Card.Body>
-									<Card.Text>{tema.text}</Card.Text>
+									<Card.Text>
+										{tema.text}
+									</Card.Text>
 								</Card.Body>
 							))}
 						</Card>

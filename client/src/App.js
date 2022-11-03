@@ -14,6 +14,7 @@ import SplitAutomotriz from './Pages/Cursos/SplitAutomotriz/SplitAutomotriz';
 import Split from './Pages/Cursos/Split/Split';
 import Automotriz from './Pages/Cursos/Automotriz/Automotriz';
 import Heladeras from './Pages/Cursos/Heladeras/Heladeras';
+import InstalacionEquiposAC from './Pages/Servicios/InstalacionEquiposAC/InstalacionEquiposAC';
 function App () {
   const {
     cursosOnline,
@@ -31,6 +32,10 @@ function App () {
     lavarropa,
   } = Paths.Cursos;
 
+  const {
+    instalacion,
+  } = Paths.Servicios
+
   return (
     <>
       <Navigation />
@@ -46,6 +51,7 @@ function App () {
         <Route path={ split.link } element={ <Split /> } />
         <Route path={ automotriz.link } element={ <Automotriz /> } />
         <Route path={ heladera.link } element={ <Heladeras /> } />
+        <Route path={ instalacion.link } element={ <InstalacionEquiposAC /> } />
       </Routes>
       <Footer />
     </>
